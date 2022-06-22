@@ -1,0 +1,95 @@
+=fixImageBug
+  vertical-align: middle
+  max-width: 100%
+  height: auto
+=imageHoverEffect
+  content: ''
+  position: absolute
+  background-color: rgba(0,0,0,.6)
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  pointer-events: none
+  animation-name: hoverEffect 
+  animation-duration: 0.25s
+  animation-timing-function: linear both
+=imageHoverLoupe($imageSize)
+  content: ''
+  position: absolute
+  background: no-repeat url("../img/icons/search-solid.svg") center transparent
+  background-size: $imageSize $imageSize
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 60px
+  height: 60px
+  pointer-events: none
+  animation-name: fade-in-fwd-icon 
+  animation-duration: 0.25s
+  animation-timing-function: linear both
+=image($width, $height)
+  width: $width
+  max-height: $height
+  vertical-align: middle
+  object-fit: cover
+  cursor: pointer
+
+.gallery
+  padding-bottom: 75px
+  &__wrapper
+    padding-top: 40px
+.gallery-image-list
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  &__item
+    position: relative
+    display: flex
+    &:hover::before
+      +imageHoverEffect
+    &:hover::after
+      +imageHoverLoupe(40px)
+  &__image
+    width: 100%
+    object-fit: cover
+    flex-grow: 1
+    +image(285px, 320px)
+    +fixImageBug
+  &__image-big
+    width: 100%
+    object-fit: cover
+    flex-grow: 2
+    +image(570px, 320px)
+    +fixImageBug
+@keyframes fade-in-fwd-icon
+  0% 
+    -webkit-transform: perspective(800px) translateZ(-80px) translate(-50%, -50%)
+    transform: perspective(800px) translateZ(-80px) translate(-50%, -50%)
+    opacity: 0
+  100% 
+    -webkit-transform: perspective(800px) translateZ(0) translate(-50%, -50%)
+    transform: perspective(800px) translateZ(0) translate(-50%, -50%)
+    opacity: 1
+.hoverEffect 
+  -webkit-animation: hoverEffect 0.3s linear both
+  animation: hoverEffect 0.3s linear both
+@-webkit-keyframes hoverEffect 
+  0% 
+    -webkit-transform: perspective(1400px) translateZ(-80px)
+    transform: perspective(1400px) translateZ(-80px)
+    opacity: 0
+  100% 
+    -webkit-transform: perspective(1400px) translateZ(0)
+    transform: perspective(1400px) translateZ(0)
+    opacity: 1
+@keyframes hoverEffect 
+  0% 
+    -webkit-transform: perspective(1400px) translateZ(-80px)
+    transform: perspective(1400px) translateZ(-80px)
+    opacity: 0
+  100% 
+    -webkit-transform: perspective(1400px) translateZ(0)
+    transform: perspective(1400px) translateZ(0)
+    opacity: 1
+  

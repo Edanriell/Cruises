@@ -1,0 +1,210 @@
+.modal
+  position: fixed
+  width: 650px
+  height: 720px
+  top: 15%
+  left: 36%
+  transform: translate(-50%, -50%)
+  padding: 120px 50px 90px 50px
+  background: #FFFFFF
+  box-shadow: 0px 20px 50px rgba(47, 55, 237, 0.12)
+  box-sizing: border-box
+  &__wrapper
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,.7)
+    z-index: 4
+    font-family: 'Montserrat-Regular', sans-serif
+    display: none
+.modal-form
+  display: grid
+  grid-template-rows: repeat(6, 1fr)
+  grid-gap: 15px
+  &__username
+    grid-row: 1 / 2
+  &__username-input
+    width: 100%
+    height: 50px
+    border: 1px solid #33c7fd
+    box-shadow: 0px 20px 50px rgba(47, 55, 237, 0.12)
+    transition: all 0.2s ease-in-out
+    &:hover
+      border: 1px solid #13b0e9
+    &:active
+      border: 1px solid #64d6ff
+    &::placeholder
+      color: #000
+      padding-left: 20px
+  &__usersurname
+    grid-row: 2 / 3
+  &__usersurname-input
+    width: 100%
+    height: 50px
+    border: 1px solid #33c7fd
+    box-shadow: 0px 20px 50px rgba(47, 55, 237, 0.12)
+    transition: all 0.2s ease-in-out
+    &:hover
+      border: 1px solid #13b0e9
+    &:active
+      border: 1px solid #64d6ff
+    &::placeholder
+      color: #000
+      padding-left: 20px
+  &__user-address
+    grid-row: 3 / 4
+  &__user-address-input
+    width: 100%
+    height: 50px
+    border: 1px solid #33c7fd
+    box-shadow: 0px 20px 50px rgba(47, 55, 237, 0.12)
+    transition: all 0.2s ease-in-out
+    &:hover
+      border: 1px solid #13b0e9
+    &:active
+      border: 1px solid #64d6ff
+    &::placeholder
+      color: #000
+      padding-left: 20px
+  &__user-phone
+    grid-row: 4 / 5
+  &__user-phone-input
+    width: 100%
+    height: 50px
+    border: 1px solid #33c7fd
+    box-shadow: 0px 20px 50px rgba(47, 55, 237, 0.12)
+    transition: all 0.2s ease-in-out
+    &:hover
+      border: 1px solid #13b0e9
+    &:active
+      border: 1px solid #64d6ff
+    &::placeholder
+      color: #000
+      padding-left: 20px
+  &__user-email
+    grid-row: 5 / 6
+  &__user-email-input
+    width: 100%
+    height: 50px
+    border: 1px solid #33c7fd
+    box-shadow: 0px 20px 50px rgba(47, 55, 237, 0.12)
+    transition: all 0.2s ease-in-out
+    &:hover
+      border: 1px solid #13b0e9
+    &:active
+      border: 1px solid #64d6ff
+    &::placeholder
+      color: #000
+      padding-left: 20px
+  &__product-select
+    grid-row: 6 / 7
+  &__product-select-list
+    width: 100%
+    height: 50px
+    border: 1px solid #33c7fd
+    box-shadow: 0px 20px 50px rgba(47, 55, 237, 0.12)
+    transition: all 0.2s ease-in-out
+    color: #000
+    &:hover
+      border: 1px solid #13b0e9
+    &:active
+      border: 1px solid #64d6ff
+.product-select__item
+  padding-left: 20px
+.modal-btn-close
+  position: absolute
+  top: 24px
+  right: 33px
+  width: 15px
+  height: 17px
+  background: no-repeat url("../img/close-modal.png") center
+  transition: all 0.2s ease-in-out
+  cursor: pointer
+  &:hover
+    background: no-repeat url("../img/close-modal-hover.png") center    
+.modal-btn-submit
+  position: absolute
+  bottom: 40px
+  left: 50%
+  transform: translateX(-50%)
+  height: 50px
+  width: 550px
+  background: #30ac36
+  color: #FFF
+  cursor: pointer
+  transition: all 0.2s ease-in-out
+  &:hover
+    background: #1c8121
+.modal-main-text
+  text-align: right
+  font-size: 2rem
+.modal-fade-in
+  -webkit-animation: modal-fade-in 0.3s linear both
+  animation: modal-fade-in 0.3s linear both
+@-webkit-keyframes modal-fade-in 
+  0% 
+    -webkit-transform: perspective(800px) translateZ(-80px)
+    transform: perspective(800px) translateZ(-80px)
+    opacity: 0
+  100% 
+    -webkit-transform: perspective(800px) translateZ(0)
+    transform: perspective(800px) translateZ(0)
+    opacity: 1
+@keyframes modal-fade-in 
+  0% 
+    -webkit-transform: perspective(800px) translateZ(-80px)
+    transform: perspective(800px) translateZ(-80px)
+    opacity: 0
+  100% 
+    -webkit-transform: perspective(800px) translateZ(0)
+    transform: perspective(800px) translateZ(0)
+    opacity: 1
+.modal-fade-out
+  -webkit-animation: modal-fade-out 0.15s linear both
+  animation: modal-fade-out 0.15s linear both
+@-webkit-keyframes modal-fade-out 
+  0% 
+    -webkit-transform: perspective(800px) translateZ(0)
+    transform: perspective(800px) translateZ(0)
+    opacity: 1
+  100% 
+    -webkit-transform: perspective(800px) translateZ(-80px)
+    transform: perspective(800px) translateZ(-80px)
+    opacity: 0
+@keyframes modal-fade-out 
+  0% 
+    -webkit-transform: perspective(800px) translateZ(0)
+    transform: perspective(800px) translateZ(0)
+    opacity: 1
+  100% 
+    -webkit-transform: perspective(800px) translateZ(-80px)
+    transform: perspective(800px) translateZ(-80px)
+    opacity: 0
+.fade-out 
+  -webkit-animation: fade-out 0.15s ease-out both
+  animation: fade-out 0.15s ease-out both
+@-webkit-keyframes fade-out 
+  0% 
+    opacity: 1
+  100% 
+    opacity: 0
+@keyframes fade-out 
+  0% 
+    opacity: 1
+  100% 
+    opacity: 0
+.fade-in 
+  -webkit-animation: fade-in 0.3s ease-in-out both
+  animation: fade-in 0.3s ease-in-out both
+@-webkit-keyframes fade-in 
+  0% 
+    opacity: 0
+  100% 
+    opacity: 1
+@keyframes fade-in 
+  0% 
+    opacity: 0
+  100% 
+    opacity: 1

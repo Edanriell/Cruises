@@ -1,0 +1,70 @@
+.footer
+  background: #FFF
+  &__wrapper
+    padding-top: 30px
+    padding-bottom: 40px
+    display: flex
+    flex-wrap: wrap
+.footer-menu
+  margin-right: 150px
+  &__item
+  &__link
+    position: relative
+    &:after 
+      background: none repeat scroll 0 0 transparent
+      bottom: -4px
+      content: ""
+      display: block
+      height: 2px
+      left: 50%
+      position: absolute
+      background: #13b0e9
+      transition: width 0.3s ease 0s, left 0.3s ease 0s
+      width: 0
+    &:hover:after 
+      width: 100%
+      left: 0
+.footer-social
+  &__text
+    margin-bottom: 10px
+.footer-social-button-list
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  max-width: 260px
+  &__item
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    margin-right: 10px
+    cursor: pointer
+    transition: all 0.10s linear
+    &:nth-child(1)
+      background: no-repeat url("../img/icons/vk.svg") center center #0d3351
+    &:nth-child(2)
+      background: no-repeat url("../img/icons/ok.svg") center center #0d3351
+    &:nth-child(3)
+      background: no-repeat url("../img/icons/yt.svg") center center #0d3351
+    &:nth-child(4)
+      background: no-repeat url("../img/icons/insta.svg") center center #0d3351
+    &:last-child
+      margin-right: 0
+    &:hover
+      transform: scale(1.2)
+  &__link
+.footer-contacts
+  margin-left: auto
+  margin-right: 25px
+  &__address
+  &__copyright
+    font-style: normal
+.footer-contacts-address
+  &__phone
+    font-style: normal
+    text-transform: uppercase
+    font-family: "Raleway-Bold", Georgia, "Times New Roman", Times, serif
+    font-style: normal
+    font-weight: 700
+  &__description
+    font-style: normal
+    font-size: 1rem

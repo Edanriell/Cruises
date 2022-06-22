@@ -1,0 +1,135 @@
+=arrowOnHover($iconUrl, $translate, $icon: false)
+  @if $icon
+    > button
+      background: no-repeat url($iconUrl) center
+      transform: $translate scale(1.1)
+=onArrowClick($translate, $scale, $icon: false)
+  @if $icon
+    > button
+      transform: $translate scale($scale)
+.imageGallery
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0,0,0,.78)
+  z-index: 4
+  font-family: 'Montserrat-Regular', sans-serif
+  &__content
+    display: flex
+    justify-content: center
+    height: 100%
+  &__image
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px
+    width: 100%
+    object-fit: contain
+  &__firstColumn
+    position: relative
+    display: flex
+    flex: 1 1 20%
+    cursor: pointer
+    height: 100%
+    transition: all 0.25s linear
+    &:hover
+      +arrowOnHover('../img/icons/arrow-left-solid-white.svg', translateX(-20px), true)
+    &:active
+      +onArrowClick(translateX(-30px), 1, true)
+  &__secondColumn
+    flex: 1 1 60%
+    align-self: center
+  &__thirdColumn
+    position: relative
+    display: flex
+    flex: 1 1 20%
+    cursor: pointer
+    height: 100%
+    transition: all 0.25s linear
+    &:hover
+      +arrowOnHover('../img/icons/arrow-right-solid-white.svg', translateX(20px), true)
+    &:active
+      +onArrowClick(translateX(30px), 1, true)
+  &__nextBtn
+    width: 70px
+    height: 70px
+    margin-left: 40px
+    margin-right: auto
+    margin-top: auto
+    margin-bottom: auto 
+    cursor: pointer
+    background: no-repeat url('../img/icons/arrow-right-solid.svg') center
+    transition: all 0.25s linear
+    pointer-events: none
+    &:hover
+      background: no-repeat url('../img/icons/arrow-right-solid-white.svg') center
+  &__prevBtn
+    width: 70px
+    height: 70px
+    margin-right: 40px
+    margin-left: auto
+    margin-top: auto
+    margin-bottom: auto 
+    cursor: pointer
+    background: no-repeat url('../img/icons/arrow-left-solid.svg') center
+    transition: all 0.25s linear
+    pointer-events: none
+    &:hover
+      background: no-repeat url('../img/icons/arrow-left-solid-white.svg') center
+  &__closeBtn
+    position: absolute
+    width: 60px
+    height: 60px
+    top: 40px
+    right: 60px
+    cursor: pointer
+    background: no-repeat url('../img/icons/close.svg') center
+    transition: all 0.25s linear
+    z-index: 999
+    &:hover
+      background: no-repeat url('../img/icons/close-white.svg') center
+      transform: rotate(-270deg) scale(1.1)
+    &:active
+      transform: rotate(-270deg) scale(0.8)
+  &__imgCounter
+    position: absolute
+    top: 60px
+    left: 60px
+    display: flex
+  &__totalImages
+    color: red
+    order: 2
+    font-size: 6rem
+    color: #FFF
+  &__currentImage
+    display: flex
+    color: red
+    order: 1
+    font-size: 6rem
+    color: #FFF
+    margin-right: 6px
+    &::after
+      content: '/'
+      margin-left: 6px
+      font-size: 8rem
+      color: rgba(0, 0, 0, 0.4)
+.fade-in-fwd-element
+  -webkit-animation: fade-in-fwd-element 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+  animation: fade-in-fwd-element 0.2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+@-webkit-keyframes fade-in-fwd-element 
+  0% 
+    -webkit-transform: perspective(100px) translateZ(-10px)
+    transform: perspective(100px) translateZ(-10px)
+    opacity: 0
+  100% 
+    -webkit-transform: perspective(100px) translateZ(0)
+    transform: perspective(100px) translateZ(0)
+    opacity: 1
+@keyframes fade-in-fwd-element 
+  0% 
+    -webkit-transform: perspective(100px) translateZ(-10px)
+    transform: perspective(100px) translateZ(-10px)
+    opacity: 0
+  100% 
+    -webkit-transform: perspective(100px) translateZ(0)
+    transform: perspective(100px) translateZ(0)
+    opacity: 1

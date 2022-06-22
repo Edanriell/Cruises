@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Морские прогулки по Чёрному морю" />
+		<meta name="keywords" content="Cruises" />
+		<meta name="robots" , content="index, follow" />
+		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+		<title>Морские прогулки по Чёрному морю</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav container">
+				<div class="nav__wrapper">
+					<ul class="main-menu">
+						<li class="main-menu__item">
+							<a class="main-menu__link" href="#">Расписание рейсов</a>
+						</li>
+						<li class="main-menu__item">
+							<a class="main-menu__link" href="#">Вход для партнёров</a>
+						</li>
+						<li class="main-menu__item">
+							<a class="main-menu__link" href="#">О компании</a>
+						</li>
+					</ul>
+					<ul class="user-menu">
+						<li class="user-menu__item" id="dropDown1" data-accordion="dropDown1">
+							<a class="user-menu__link" href="#">Личный кабинет</a>
+						</li>
+						<li class="user-menu__item" id="dropDown2" data-accordion="dropDown2">
+							<a class="user-menu__link" href="#">Рубль</a>
+						</li>
+						<li class="user-menu__item" id="dropDown3" data-accordion="dropDown3">
+							<a class="user-menu__link" href="#">Ru</a>
+						</li>
+					</ul>
+					<address class="support-contacts">
+						<a class="support-contacts__phone-number" href="tel:+88005006105 "
+							>8 800 500-61-05</a
+						>
+						<p class="support-contacts__description">Круглосуточная поддержка</p>
+					</address>
+					<div class="logotype-wrapper">
+						<a class="logotype" href="#">
+							<img
+								class="logotype__image"
+								src="./img/logo.svg"
+								alt="Логотип компании Морские круизы"
+								width="88"
+								height="88"
+							/>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="promo">
+				<div class="promo__wrapper container">
+					<h1 class="promo__header">
+						Морские прогулки<br /><span class="promo__header-big">по чёрному морю</span>
+					</h1>
+					<div class="button-wrapper">
+						<button class="button" type="button" data-modal>Выбрать круиз</button>
+					</div>
+					<svg
+						class="promo__path line"
+						xmlns="http://www.w3.org/2000/svg"
+						width="60.938"
+						height="283.312"
+						viewBox="0 0 60.938 283.312"
+					>
+						<defs>
+							<mask id="dash-mask">
+								<path
+									stroke="black"
+									class="line__mask"
+									stroke-dasharray="10,9"
+									d="M843.192,468.691c7.838,23.519,19.5,30.665,14.644,68.188-7.651,37.153-41.942,46.093-52.429,86.924-9.641,52.359,34.964,48.472,32.421,111.384-0.4,9.814-.524,21.566-3.18,30.537"
+								/>
+							</mask>
+						</defs>
+						<path
+							stroke="black"
+							id="path"
+							data-name="Фигура 1"
+							class="line__path"
+							d="M843.192,468.691c7.838,23.519,19.5,30.665,14.644,68.188-7.651,37.153-41.942,46.093-52.429,86.924-9.641,52.359,34.964,48.472,32.421,111.384-0.4,9.814-.524,21.566-3.18,30.537"
+							transform="translate(-799.531 -467.188)"
+							mask="url(#dash-mask)"
+						/>
+					</svg>
+				</div>
+			</section>
+			<section class="catalog">
+				<h2 class="main-header">Каталог круизов</h2>
+				<div class="catalog__wrapper container">
+					<select class="catalog-sort" name="sort" id="sort">
+						<option class="catalog-sort__option" value="price">
+							Сортировать круизы по цене
+						</option>
+					</select>
+					<ul class="catalog-list">
+						<li class="catalog-list__item catalog-list__item-large modal-fade-in">
+							<article
+								id="jaf123"
+								class="catalog-item catalog-item-large catalog-item-hit"
+							>
+								<h3 class="catalog-item__name">Морской круиз в Анапу</h3>
+								<img
+									class="catalog-item__image"
+									src="./img/cards/1/main.jpg"
+									width="555"
+									height="437"
+									alt="Морской круиз в Анапу"
+								/>
+								<dl class="catalog-item__description">
+									<div class="item-description">
+										<dt class="item-description__route">Маршрут:</dt>
+										<dd class="item-description__place">
+											Сочи-Лазаревское-Геленджик-Анапа
+										</dd>
+									</div>
+									<div class="item-description">
+										<dt class="item-description__tripDuration">
+											Продолжительность:
+										</dt>
+										<dd class="item-description__tripDurationHours">
+											10 ч. 0 мин.
+										</dd>
+									</div>
+								</dl>
+								<p class="item-description__price">49 000 руб.</p>
+							</article>
+						</li>
+						<li class="catalog-list__item modal-fade-in">
+							<article id="nas131" class="catalog-item">
+								<h3 class="catalog-item__name">Морской круиз в Новороссийск</h3>
+								<img
+									class="catalog-item__image"
+									src="./img/cards/2/main.jpg"
+									width="555"
+									height="113"
+									alt="Обзорная морская прогулка с экскурсией"
+								/>
+								<dl class="catalog-item__description">
+									<div class="item-description">
+										<dt class="item-description__route">Маршрут:</dt>
+										<dd class="item-description__place">
+											Сочи-Геленджик-Новороссийск-Геленджик-Сочи
+										</dd>
+									</div>
+									<div class="item-description">
+										<dt class="item-description__tripDuration">
+											Продолжительность:
+										</dt>
+										<dd class="item-description__tripDurationHours">
+											13 ч. 0 мин.
+										</dd>
+									</div>
+								</dl>
+								<p class="item-description__price">14 800 руб.</p>
+							</article>
+						</li>
+						<li class="catalog-list__item modal-fade-in">
+							<article id="fgjsy2" class="catalog-item catalog-item-discount">
+								<h3 class="catalog-item__name">
+									Обзорная морская прогулка с экскурсией
+								</h3>
+								<img
+									class="catalog-item__image"
+									src="./img/cards/3/main.jpg"
+									width="555"
+									height="113"
+									alt="Морская прогулка в Геленджик"
+								/>
+								<dl class="catalog-item__description">
+									<div class="item-description">
+										<dt class="item-description__route">Маршрут:</dt>
+										<dd class="item-description__place">
+											Сочи-Адлер-Сочи (без высадки)
+										</dd>
+									</div>
+									<div class="item-description">
+										<dt class="item-description__tripDuration">
+											Продолжительность:
+										</dt>
+										<dd class="item-description__tripDurationHours">
+											1 ч. 0 мин.
+										</dd>
+									</div>
+								</dl>
+								<p class="item-description__price">
+									5 000 руб.
+									<s class="catalog-item-discount__oldprice">15000 руб.</s>
+								</p>
+							</article>
+						</li>
+						<li class="catalog-list__item modal-fade-in">
+							<article id="adsfj351" class="catalog-item">
+								<h3 class="catalog-item__name">Морская прогулка в Геленджик</h3>
+								<img
+									class="catalog-item__image"
+									src="./img/cards/4/main.jpg"
+									width="555"
+									height="113"
+									alt="Морской круиз в Новороссийск"
+								/>
+								<dl class="catalog-item__description">
+									<div class="item-description">
+										<dt class="item-description__route">Маршрут:</dt>
+										<dd class="item-description__place">
+											Сочи-Туапсе-Геленджик
+										</dd>
+									</div>
+									<div class="item-description">
+										<dt class="item-description__tripDuration">
+											Продолжительность:
+										</dt>
+										<dd class="item-description__tripDurationHours">
+											12 ч. 30 мин.
+										</dd>
+									</div>
+								</dl>
+								<p class="item-description__price">7 000 руб.</p>
+							</article>
+						</li>
+						<li class="catalog-list__item modal-fade-in">
+							<article id="sdhgsh15" class="catalog-item">
+								<h3 class="catalog-item__name">Морская прогулка в Абрау-Дюрсо</h3>
+								<img
+									class="catalog-item__image"
+									src="./img/cards/5/main.jpg"
+									width="555"
+									height="113"
+									alt="Морская прогулка в Абрау-Дюрсо"
+								/>
+								<dl class="catalog-item__description">
+									<div class="item-description">
+										<dt class="item-description__route">Маршрут:</dt>
+										<dd class="item-description__place">Сочи-Абрау-Дюрсо</dd>
+									</div>
+									<div class="item-description">
+										<dt class="item-description__tripDuration">
+											Продолжительность:
+										</dt>
+										<dd class="item-description__tripDurationHours">
+											11 ч. 0 мин.
+										</dd>
+									</div>
+								</dl>
+								<p class="item-description__price">14 800 руб.</p>
+							</article>
+						</li>
+					</ul>
+					<div class="button-wrapper">
+						<button class="button button-decorated" data-fetchCards type="button">
+							Больше круизов
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="gallery">
+				<h2 class="main-header">Фотографии с круизов</h2>
+				<div class="gallery__wrapper container">
+					<ul class="gallery-image-list">
+						<li class="gallery-image-list__item">
+							<img
+								src="./img/gallery/1.jpg"
+								class="gallery-image-list__image-big"
+								width="570"
+								height="320"
+								alt="Фото 1"
+							/>
+						</li>
+						<li class="gallery-image-list__item">
+							<img
+								src="./img/gallery/2.jpg"
+								class="gallery-image-list__image"
+								width="285"
+								height="320"
+								alt="Фото 2"
+							/>
+						</li>
+						<li class="gallery-image-list__item">
+							<img
+								src="./img/gallery/3.jpg"
+								class="gallery-image-list__image"
+								width="285"
+								height="320"
+								alt="Фото 3"
+							/>
+						</li>
+						<li class="gallery-image-list__item">
+							<img
+								src="./img/gallery/4.jpg"
+								class="gallery-image-list__image"
+								width="285"
+								height="320"
+								alt="Фото 4"
+							/>
+						</li>
+						<li class="gallery-image-list__item">
+							<img
+								src="./img/gallery/5.jpg"
+								class="gallery-image-list__image"
+								width="285"
+								height="320"
+								alt="Фото 5"
+							/>
+						</li>
+						<li class="gallery-image-list__item">
+							<img
+								src="./img/gallery/6.jpg"
+								class="gallery-image-list__image-big"
+								width="570"
+								height="320"
+								alt="Фото 6"
+							/>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="feedback">
+				<h2 class="main-header">Отзывы</h2>
+				<div class="feedback__wrapper container">
+					<ul class="feedback-list">
+						<li class="feedback-list__item">
+							<article class="feedback-item">
+								<img
+									src="./img/feedback/1.jpg"
+									class="feedback-item__image"
+									width="360"
+									height="160"
+									alt=""
+								/>
+								<blockquote class="feedback-item__blockquote">
+									<cite class="feedback-item__author">Алексей Петров</cite>
+									<p class="feedback-item__takedTrip">
+										Морской круиз в Новороссийск
+									</p>
+									<p class="feedback-item__text">
+										Давно мечтал посетить прекрасный город Новороссийск, и вот
+										моя мечта сбылась. Путешествие очень понравилось, тем более,
+										что море было спокойное, и качки вообще не ощущалось.
+										Рекомендую!
+									</p>
+								</blockquote>
+							</article>
+						</li>
+						<li class="feedback-list__item">
+							<article class="feedback-item">
+								<img
+									src="./img/feedback/2.jpg"
+									class="feedback-item__image"
+									width="360"
+									height="160"
+									alt=""
+								/>
+								<blockquote class="feedback-item__blockquote">
+									<cite class="feedback-item__author">Михаил Кузнецов</cite>
+									<p class="feedback-item__takedTrip">
+										Морская прогулка в Абрау-Дюрсо
+									</p>
+									<p class="feedback-item__text">
+										И прогулка интересная, и шампанское вкусное!
+									</p>
+								</blockquote>
+							</article>
+						</li>
+						<li class="feedback-list__item">
+							<article class="feedback-item">
+								<img
+									src="./img/feedback/3.jpg"
+									class="feedback-item__image"
+									width="360"
+									height="160"
+									alt=""
+								/>
+								<blockquote class="feedback-item__blockquote">
+									<cite class="feedback-item__author">Елена Фёдорова</cite>
+									<p class="feedback-item__takedTrip">Морской круиз в Анапу</p>
+									<p class="feedback-item__text">
+										Отлично отдохнули, получили массу впечатлений. Понравилась
+										забота команды об отдыхающих. Любые просьбы, в рамках
+										возможного, можно решить. Конечно видно, что судно видало не
+										только Чёрное море и ходит давно. Но команда лайнера делает
+										все возможное, чтобы это вас не беспокоило. Клининг в каютах
+										убирался сам, без напоминаний и это радует. Аниматоры
+										старались и не давали скучать никому.
+									</p>
+								</blockquote>
+							</article>
+						</li>
+					</ul>
+					<div class="button-wrapper">
+						<button class="button" type="button" data-modal>Выбрать круиз</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__wrapper container">
+				<ul class="footer-menu">
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu__link">Расписание рейсов</a>
+					</li>
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu__link">Вход для партнёров</a>
+					</li>
+					<li class="footer-menu__item">
+						<a href="#" class="footer-menu__link">О компании</a>
+					</li>
+				</ul>
+				<div class="footer-social">
+					<p class="footer-social__text">Будь на связи:</p>
+					<ul class="footer-social-button-list">
+						<li class="footer-social-button-list__item">
+							<a href="#" class="footer-social-button-list__link"
+								><span class="visually-hidden">ВКонтакте</span></a
+							>
+						</li>
+						<li class="footer-social-button-list__item">
+							<a href="#" class="footer-social-button-list__link"
+								><span class="visually-hidden">Одноклассники</span></a
+							>
+						</li>
+						<li class="footer-social-button-list__item">
+							<a href="#" class="footer-social-button-list__link"
+								><span class="visually-hidden">YouTube</span></a
+							>
+						</li>
+						<li class="footer-social-button-list__item">
+							<a href="#" class="footer-social-button-list__link"
+								><span class="visually-hidden">Instagram</span></a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-contacts">
+					<address class="footer-contacts__address footer-contacts-address">
+						<a href="tel:+88005006105" class="footer-contacts-address__phone"
+							>8 800 500-61-05</a
+						>
+						<p class="footer-contacts-address__description">Круглосуточная поддержка</p>
+					</address>
+					<p class="footer-contacts__copyright">© 2016 OOO «Городские Круизы»</p>
+				</div>
+			</div>
+		</footer>
+		<div class="modal__wrapper">
+			<div class="modal">
+				<div>
+					<button class="modal-btn-close" type="button">
+						<span class="visually-hidden">Закрыть окно</span>
+					</button>
+				</div>
+				<form id="form" class="modal__form modal-form" action="#" method="post">
+					<div class="modal-form__username">
+						<label class="visually-hidden" for="name">Ваше имя</label>
+						<input
+							class="modal-form__username-input"
+							id="name"
+							name="name"
+							type="text"
+							placeholder="Имя"
+							required
+						/>
+					</div>
+					<div class="modal-form__usersurname">
+						<label class="visually-hidden" for="surname">Ваша фамилия</label>
+						<input
+							class="modal-form__usersurname-input"
+							id="surname"
+							name="surname"
+							type="text"
+							placeholder="Фамилия"
+							required
+						/>
+					</div>
+					<div class="modal-form__user-address">
+						<label class="visually-hidden" for="address">Ваш адрес</label>
+						<input
+							class="modal-form__user-address-input"
+							id="address"
+							name="address"
+							type="text"
+							placeholder="Фактический адрес проживания"
+							required
+						/>
+					</div>
+					<div class="modal-form__user-phone">
+						<label class="visually-hidden" for="phone">Ваш номер телефона</label>
+						<input
+							class="modal-form__user-phone-input"
+							id="phone"
+							name="phone"
+							type="tel"
+							placeholder="Номер телефона"
+							required
+						/>
+					</div>
+					<div class="modal-form__user-email">
+						<label class="visually-hidden" for="email">Ваш почтовый ящик</label>
+						<input
+							class="modal-form__user-email-input"
+							id="email"
+							name="email"
+							type="email"
+							placeholder="Электронная почта"
+							required
+						/>
+					</div>
+					<div class="modal-form__product-select">
+						<label class="visually-hidden" for="products">Список круизов</label>
+						<select
+							class="modal-form__product-select-list product-select"
+							name="products"
+							id="products"
+							required
+						>
+							<option class="product-select__item" value="0">Выберете круиз</option>
+							<option class="product-select__item" value="49 000">
+								Морской круиз в Анапу
+							</option>
+							<option class="product-select__item" value="14 800">
+								Морской круиз в Новороссийск
+							</option>
+							<option class="product-select__item" value="5 000">
+								Обзорная морская прогулка с экскурсией
+							</option>
+							<option class="product-select__item" value="7 000">
+								Морская прогулка в Геленджик
+							</option>
+							<option class="product-select__item" value="14 800">
+								Морская прогулка в Абрау-Дюрсо
+							</option>
+						</select>
+					</div>
+					<div>
+						<button id="send-data" class="modal-btn-submit" type="submit">
+							Оформить заказ
+						</button>
+					</div>
+				</form>
+				<div class="modal-main-text">
+					<p>Сумма заказа:</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="product-modal__wrapper">
+			<div class="product-modal">
+				<div>
+					<button class="product-modal-btn-close" type="button">
+						<span class="visually-hidden">Закрыть окно</span>
+					</button>
+				</div>
+				<div class="product-modal__content">
+					<div class="product-modal-mini-gallery">
+						<img
+							class="product-modal-mini-gallery__image-preview-window"
+							src="./img/cards/5/1.jpg"
+							width="361"
+							height="460"
+							alt=""
+							data-product-modal="main-image"
+						/>
+						<ul class="product-modal-mini-gallery__image-list">
+							<li class="product-modal-mini-gallery__item">
+								<img
+									class="product-modal-mini-gallery__image"
+									src="./img/cards/5/2.jpg"
+									width="80"
+									height="55"
+									alt=""
+									data-product-modal="img1"
+								/>
+							</li>
+							<li class="product-modal-mini-gallery__item">
+								<img
+									class="product-modal-mini-gallery__image"
+									src="./img/cards/5/3.jpg"
+									width="80"
+									height="55"
+									alt=""
+									data-product-modal="img2"
+								/>
+							</li>
+							<li class="product-modal-mini-gallery__item">
+								<img
+									class="product-modal-mini-gallery__image"
+									src="./img/cards/5/4.jpg"
+									width="80"
+									height="55"
+									alt=""
+									data-product-modal="img3"
+								/>
+							</li>
+							<li class="product-modal-mini-gallery__item">
+								<img
+									class="product-modal-mini-gallery__image"
+									src="./img/cards/5/5.jpg"
+									width="80"
+									height="55"
+									alt=""
+									data-product-modal="img4"
+								/>
+							</li>
+						</ul>
+					</div>
+					<div class="product-info">
+						<h3 class="product-info__product-name" data-product-modal="item-name">
+							Морская прогулка в Абрау-Дюрсо
+						</h3>
+						<dl class="product-info__description">
+							<div class="product-description">
+								<dt class="product-description__route">Маршрут:</dt>
+								<dd class="product-description__place" data-product-modal="place">
+									Сочи - Абрау-Дюрсо
+								</dd>
+							</div>
+							<div class="product-description">
+								<dt class="product-description__tripDuration">
+									Продолжительность:
+								</dt>
+								<dd
+									class="product-description__tripDurationHours"
+									data-product-modal="tripDuration"
+								>
+									11 ч. 0 мин.
+								</dd>
+							</div>
+							<div>
+								<dt class="product-description__timetable">Расписание:</dt>
+								<dd class="product-description__timetable-description">
+									<p data-product-modal="paragraph1">
+										Отправление из Сочи: ежедневно в 10:00, 11:40, 13:20, 15:00,
+										16:40
+									</p>
+									<p data-product-modal="paragraph2">
+										Отправление из Абрау-Дюрсо: ежедневно
+									</p>
+									<p data-product-modal="paragraph3">
+										в 12:25, 14:05, 15:45, 17:25, 19:05
+									</p>
+									<p data-product-modal="paragraph4">
+										Продолжительность: 11 часов 0 мин., из которых 10 часов -
+										морская прогулка (туда и обратно), от 1 часа 30 мин. -
+										свободное время в Ласточкином гнезде
+									</p>
+									<p data-product-modal="paragraph5">
+										Причал отправления/прибытия: набережная Ленина, причал №8,
+										теплоход "Азов"
+									</p>
+								</dd>
+							</div>
+						</dl>
+						<p class="product-info__product-price" data-product-modal="price">
+							14 800 руб.
+						</p>
+						<div class="button-product-modal">
+							<button class="button" type="button">Бронирование</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

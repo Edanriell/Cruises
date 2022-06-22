@@ -1,0 +1,76 @@
+.error
+  position: relative
+  width: 640px
+  min-height: 120px
+  background: #FFF
+  display: flex
+  align-items: center
+  padding: 30px
+  box-sizing: border-box
+  &__wrapper
+    position: fixed
+    bottom: 40px
+    left: 35%
+    transform: translateX(-50%)
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset
+    z-index: 999
+  &__icon-wrapper
+  &__icon
+    width: 40px
+    height: 40px
+  &__text
+    margin-left: 16px
+  &__close-btn
+    position: absolute
+    width: 20px
+    height: 20px
+    background: red
+    top: 10px
+    right: 10px
+    background: no-repeat url("../img/icons/close-error-gray.svg") center
+    transition: all 0.2s ease-in-out
+    cursor: pointer
+    &:hover
+      background: no-repeat url("../img/icons/close-error-black.svg") center
+.error-fade-in
+  -webkit-animation: error-fade-in 0.3s linear both
+  animation: error-fade-in 0.3s linear both
+@-webkit-keyframes error-fade-in 
+  0% 
+    -webkit-transform: translateY(50px)
+    transform: translateY(50px)
+    opacity: 0
+  100% 
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+    opacity: 1
+@keyframes error-fade-in 
+  0% 
+    -webkit-transform: translateY(50px)
+    transform: translateY(50px)
+    opacity: 0
+  100% 
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+    opacity: 1
+.error-fade-out
+  -webkit-animation: fade-out-bottom 0.2s linear both
+  animation: fade-out-bottom 0.2s linear both
+@-webkit-keyframes fade-out-bottom 
+  0% 
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+    opacity: 1
+  100% 
+    -webkit-transform: translateY(50px)
+    transform: translateY(50px)
+    opacity: 0
+@keyframes fade-out-bottom 
+  0% 
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+    opacity: 1
+  100% 
+    -webkit-transform: translateY(50px)
+    transform: translateY(50px)
+    opacity: 0

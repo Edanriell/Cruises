@@ -1,0 +1,123 @@
+.catalog
+  &__wrapper
+    padding-bottom: 80px
+.catalog-sort
+  position: relative
+  background: none
+  border: none
+  display: block
+  margin: 20px auto 0 auto
+  appearance: none
+  cursor: pointer
+  background: no-repeat url("../img/icons/chevron.svg") 208px center
+  width: 230px
+  &__option
+    cursor: pointer
+.catalog-list
+  display: grid
+  grid-auto-flow: dense
+  grid-template-columns: repeat(2, 1fr)
+  margin-top: 40px
+  margin-bottom: 5px
+  &__item
+    margin-bottom: 20px
+    position: relative
+    grid-row: span 1
+    grid-column: span 1
+  &__item-large
+    grid-row: span 2
+    grid-column: span 1
+.catalog-item
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 555px
+  min-height: 304px
+  background: #FFF
+  cursor: pointer
+  transition: all 0.15s ease-in-out
+  &:hover
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px
+  &__name
+    display: flex
+    flex-direction: row
+    align-items: center
+    order: 2
+    font-family: "RobotoSlab-Regular", Georgia, 'Times New Roman', Times, serif
+    font-size: 1.8rem
+    line-height: 2.4rem
+    letter-spacing: 0.8px
+    font-weight: 400
+    color: #00a2dd
+    margin: 15px 40px 10px 40px
+    pointer-events: none
+    &::after
+      content: ''
+      width: 5px
+      height: 8px
+      background: no-repeat url("../img/icons/blue-chevron.svg") center
+      margin-top: 4px
+      margin-left: 20px
+  &__image
+    order: 1
+    pointer-events: none
+    object-fit: cover
+  &__description
+    order: 3
+    margin-left: 40px
+    pointer-events: none
+.catalog-item-large
+  width: 555px
+  min-height: 628px
+.catalog-item-hit::before
+  position: absolute
+  content: 'Хит продаж'
+  top: -22px
+  right: 46px
+  width: 89px
+  height: 101px
+  background: no-repeat url("../img/blueFlag.png") center
+  color: #FFF
+  text-transform: uppercase
+  text-align: center
+  padding-top: 30px
+.catalog-item-discount
+  &::before
+    position: absolute
+    content: 'Акция'
+    top: -7px
+    right: 46px
+    width: 89px
+    height: 101px
+    line-height: 91px
+    background: no-repeat url("../img/redFlag.png") center
+    color: #FFF
+    text-transform: uppercase
+    text-align: center
+  &__oldprice
+    opacity: 55%
+    font-size: 1.8rem
+    margin-left: 32px
+.item-description
+  display: flex
+  &__route
+    font-family: 'Raleway-Bold'
+    font-style: normal
+    font-weight: 700
+  &__place
+    margin-left: 15px
+  &__tripDuration
+    font-family: 'Raleway-Bold'
+    font-style: normal
+    font-weight: 700
+  &__tripDurationHours
+    margin-left: 15px
+  &__price
+    order: 4
+    font-family: "RobotoSlab-Regular", Georgia, 'Times New Roman', Times, serif
+    font-size: 3rem
+    margin-left: 40px
+    margin-top: 7px
+    line-height: 4.8rem
+    letter-spacing: 0.8px
+    pointer-events: none

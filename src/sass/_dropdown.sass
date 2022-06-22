@@ -1,0 +1,59 @@
+.accordion-menu
+  position: absolute
+  background-color: #FFF
+  display: block
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__item
+    padding-top: 6px
+  &__link
+    transition: all 0.16s linear
+    &:hover
+      color: #13b0e9
+    &:active
+      color: #64d6ff
+
+.showMenu
+  -webkit-animation: showMenu 0.25s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+  animation: showMenu 0.25s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+@-webkit-keyframes showMenu 
+  0% 
+    -webkit-transform: perspective(500px) translateY(-20px)
+    transform: perspective(500px) translateY(-20px)
+    opacity: 0
+  100% 
+    -webkit-transform: perspective(500px) translateY(0)
+    transform: perspective(500px) translateY(0)
+    opacity: 1
+@keyframes showMenu 
+  0% 
+    -webkit-transform: perspective(500px) translateY(-20px)
+    transform: perspective(500px) translateY(-20px)
+    opacity: 0
+  100% 
+    -webkit-transform: perspective(500px) translateY(0)
+    transform: perspective(500px) translateY(0)
+    opacity: 1
+.hideMenu 
+  -webkit-animation: hideMenu 0.25s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+  animation: hideMenu 0.25s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+@-webkit-keyframes hideMenu 
+  0% 
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+    opacity: 1
+  100% 
+    -webkit-transform: perspective(500px) translateY(-20px)
+    transform: perspective(500px) translateY(-20px)
+    opacity: 0
+@keyframes hideMenu 
+  0% 
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+    opacity: 1
+  100% 
+    -webkit-transform: perspective(500px) translateY(-20px)
+    transform: perspective(500px) translateY(-20px)
+    opacity: 0

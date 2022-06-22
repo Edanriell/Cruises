@@ -1,0 +1,44 @@
+=fixImageBug
+  vertical-align: middle
+  max-width: 100%
+  height: auto
+
+.feedback
+  &__wrapper
+    padding-top: 35px
+    padding-bottom: 60px
+.feedback-list
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  max-height: 600px
+  margin-bottom: 40px
+  &__item
+    width: 360px
+    height: 600px    
+.feedback-item
+  background: #FFF
+  width: 360px
+  height: 600px
+  &__image
+    width: 360px
+    height: 160px
+    +fixImageBug
+  &__blockquote
+    display: flex
+    flex-direction: column
+    padding: 25px 37px 60px 38px
+  &__author
+    font-family: "RobotoSlab-Regular", Georgia, 'Times New Roman', Times, serif
+    font-size: 1.8rem
+    line-height: 24px
+    letter-spacing: 0.8px
+    color: #00a2dd
+    font-style: normal
+  &__takedTrip
+    opacity: 50%
+    letter-spacing: 0.7px
+    margin-top: 7px
+    margin-bottom: 10px
+  &__text
+    letter-spacing: 0.7px
